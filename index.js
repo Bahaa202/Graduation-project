@@ -3,7 +3,7 @@ import { exec } from 'child_process';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 
 const app = express();
-const streamlitApp = 'cropdeploy.py';
+const streamlitApp = 'finaldeployment_colored.py';
 const streamlitPort = 8501;
 const nodePort = 3000;
 
