@@ -14,10 +14,9 @@ from streamlit_folium import folium_static
 import branca.colormap as cm
 
 # Load the models
-model_clay = pickle.load(open('C:/Users/eng_b/OneDrive/Desktop/soil_claymodel_lr.pkl', 'rb'))
-model_sand = pickle.load(open('C:/Users/eng_b/OneDrive/Desktop/soil_sandmodel_lr.pkl', 'rb'))
-model_silt = pickle.load(open('C:/Users/eng_b/OneDrive/Desktop/soil_siltmodel_lr.pkl', 'rb'))
-
+model_clay = pickle.load(open('C:/Users/eng_b/OneDrive/Desktop/graduation-project/pkls/soil_claymodel_lr.pkl', 'rb'))
+model_sand = pickle.load(open('C:/Users/eng_b/OneDrive/Desktop/graduation-project/pkls/soil_sandmodel_lr.pkl', 'rb'))
+model_silt = pickle.load(open('C:/Users/eng_b/OneDrive/Desktop/graduation-project/pkls/soil_siltmodel_lr.pkl', 'rb'))
 def predict_soil_component(uploaded_file, component):
     # Read the uploaded XLSX file
     data = pd.read_excel(uploaded_file)
