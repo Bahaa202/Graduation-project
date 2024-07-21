@@ -62,8 +62,10 @@
       >
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="logo" />
-          <h1 class="sitename">ReSense AI</h1>
+          <div class="d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="" />
+            <h1 class="sitename" style="text-wrap: nowrap">ReSense AI</h1>
+          </div>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -164,28 +166,20 @@
       <!-- End Page Title -->
 
       <div class="container">
-        <div class="mt-5 mb-1">
-          <h1 style="font-weight: 900;">Dynamic Dashboard By IBM Cognos</h1>
-          <img
-            src="./assets/img/dashboard.jpg"
-            alt="dashboard image"
-            style="width: 100%"
-            title="Real Dashboard From IBM"
-          />
-        </div>
-        <div class="row mt-5 mb-1">
-          <div class="col-12">
-            <h1 style="font-weight: 900;">Forecast For Three Parameters Together vs. Year</h1>
+        <div class="row">
+          <div class="mt-5 mb- col-12">
+            <h1 style="font-weight: 700">
+              Forecast For Three Parameters Together vs. Year
+            </h1>
             <img
-              src="./assets/img/climate2.jpg"
+              src="./assets/img/dashboard.jpg"
               alt="dashboard image"
               style="width: 100%"
-              title="Forcasat For Three Parameters Together vs. Year"
+              title="Real Dashboard From IBM"
             />
           </div>
-        </div>
-        <div class="row mt-5 mb-1">
-          <div class="col-md-6">
+
+          <div class="mt-5 mb-1 col-6">
             <img
               src="./assets/img/climate3.jpg"
               alt="dashboard image"
@@ -193,26 +187,50 @@
               title="Temperature Forecast vs. Year"
             />
           </div>
-          <div class="col-md-6">
+          <div class="mt-5 mb-1 col-6">
             <img
               src="./assets/img/climate4.jpg"
               alt="dashboard image"
               style="width: 100%"
-              title="Precipitation Forecast vs. Year"
+              title="Temperature Forecast vs. Year"
+            />
+          </div>
+          <div class="mt-5 mb-1 col-6">
+            <img
+              src="./assets/img/climate1.jpg"
+              alt="dashboard image"
+              style="width: 100%"
+              title="Temperature Forecast vs. Year"
+            />
+          </div>
+          <div class="mt-5 mb-1 col-6">
+            <img
+              src="./assets/img/climate2.jpg"
+              alt="dashboard image"
+              style="width: 100%"
+              title="Temperature Forecast vs. Year"
             />
           </div>
         </div>
       </div>
-      
     </main>
 
     <footer id="footer" class="footer">
-      <div class="container copyright text-center mt-4">
+      <div
+        class="container copyright text-center mt-4 d-flex justify-content-center"
+      >
         <p>
           © <span>Copyright</span>
           <strong class="px-1 sitename">ReSense AI</strong>
           <span>All Rights Reserved</span>
         </p>
+        <img
+          src="./assets/img/flag.gif"
+          alt="palestine-flag"
+          class="ms-2"
+          style="height: 22px; width: 45px"
+          title="Free Palestine"
+        />
       </div>
     </footer>
 

@@ -164,53 +164,48 @@
         </nav>
       </div>
 
-    <h1 style="margin-top: 5%; color: #333; font-size: 2em;">Start use our ML model :</h1>
-    <button id="start-streamlit-btn" style="display: inline-block; margin-top: 20px; padding: 10px 20px; font-size: 1em; color: #fff; background-color: #007bff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">Start analyzing your data for free</button>
-
-    <script>
-      document.getElementById('start-streamlit-btn').addEventListener('click', () => {
-        fetch('/start-streamlit')
-          .then(response => response.text())
-          .then(data => {
-            console.log(data);
-            alert('Streamlit server started!');
-          })
-          .catch(error => {
-            console.error('Error:', error);
-            alert('Failed to start Streamlit server.');
-          });
-      });
-
-      document.getElementById('start-streamlit-btn').addEventListener('mouseover', () => {
-        document.getElementById('start-streamlit-btn').style.backgroundColor = '#0056b3';
-      });
-
-      document.getElementById('start-streamlit-btn').addEventListener('mouseout', () => {
-        document.getElementById('start-streamlit-btn').style.backgroundColor = '#007bff';
-      });
-    </script>
-      <!-- End Page Title -->
-
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <!-- Blog Posts Section -->
-            <section id="blog-posts" class="blog-posts section">
-              <div class="container"></div>
-            </section>
-            <!-- /Blog Posts Section -->
+        <div class="row mt-4">
+          <div class="col text-center mt-4 mb-4">
+            <h3>Start use our ML model :</h3>
+            <button
+              id="start-streamlit-btn"
+              style="
+                display: inline-block;
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-size: 1em;
+                color: #fff;
+                background-color: #007bff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+              "
+            >
+              Start analyzing your data for free
+            </button>
           </div>
         </div>
       </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="container copyright text-center mt-4">
+      <div
+        class="container copyright text-center mt-4 d-flex justify-content-center"
+      >
         <p>
           © <span>Copyright</span>
           <strong class="px-1 sitename">ReSense AI</strong>
           <span>All Rights Reserved</span>
         </p>
+        <img
+          src="./assets/img/flag.gif"
+          alt="palestine-flag"
+          class="ms-2"
+          style="height: 22px; width: 45px"
+          title="Free Palestine"
+        />
       </div>
     </footer>
 
@@ -222,6 +217,7 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
+    <script type="module" src="./assets/js/soil.js"></script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
